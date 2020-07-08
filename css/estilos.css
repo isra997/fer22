@@ -1,0 +1,153 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { 
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-portada{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    background-image: url(../img/dona-01.jpg);
+    background-size: 100%;
+    animation: movimiento 20s infinite linear alternate;  
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.5;
+}
+
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.gra-texto{
+    width:100%;
+    overflow:auto;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.7;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    margin: 7px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: monospace;
+    margin-top: 220px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.sabor { 
+    color: rgb(0, 0, 0);
+    margin: 7px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.7);
+    font-family: monospace;
+    margin-top: 220px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+
+
+.carousel{
+    min-height: 400px;
+}
+
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: none;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item{
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #36221c;
+}
+
+.container-portada h1{
+    position: relative;
+}
+
+@media screen and (max-width: 1000px){
+    .gra-texto{
+        width:300px;
+        overflow:auto;
+        background: -webkit-linear-gradient(left, black, #0672d0);
+        opacity: 0.7;
+        padding: 8px;
+        color: rgb(255, 255, 255);
+        margin: 7px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        font-family: monospace;
+        margin-top: 220px;
+        margin-bottom: 35px;
+        text-align: justify;
+    }
+}
